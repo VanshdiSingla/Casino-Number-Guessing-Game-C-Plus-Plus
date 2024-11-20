@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int guessnumber;
+int num=9;
+int amount;
+cout<<"Guess your number to bet between 1 to 10 : ";
+cin>>guessnumber;
+cout<<"Amount you want to bet : ";
+cin>>amount;
+if(guessnumber==num)
+{
+    cout<<"Congrats! You won "<<endl;
+    cout<<"Your wining amount is "<<amount*10;
+}  
+else
+{
+    cout<<"Bad luck this time !! you lost 20 rupees"<<endl;
+    cout<<"The remaining amount is "<<amount-20;
+}
+}
